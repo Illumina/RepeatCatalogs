@@ -35,7 +35,7 @@ Each catalog has its own folder and there are multiple folders within it. Detail
 
 ## Contacts 
 
-If you have any questions or suggestions, you can either create an issue or reach me by [email](yqiu@illumina.com). 
+If you have any questions or suggestions, you can either create an issue or reach me by [email](mailto:yqiu@illumina.com). 
 
 ## License
 

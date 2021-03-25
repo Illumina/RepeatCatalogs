@@ -1,0 +1,1 @@
+polymorphic_STR/hg38/genotype/1000genomes/polymorphic_STR.1kg.gt.csv.gz filter=lfs diff=lfs merge=lfs -text

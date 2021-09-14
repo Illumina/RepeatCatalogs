@@ -1,6 +1,6 @@
 # Size distribution of pathogenic STRs in 1000 Genomes Project samples
 
-Here we analyzed size distribution of pathogenic STRs within 2,271 samples from 1000 Genomes Project. In particular, we examined samples with pathogenic expansions and polymorphism stratified by populations.
+Here we analyzed size distribution of pathogenic STRs within 2,504 samples from 1000 Genomes Project. In particular, we examined samples with pathogenic expansions and polymorphism stratified by populations.
 
 ## Summary of putative pathogenic expansions
 
@@ -14,11 +14,11 @@ While in some cases, some STRs are expanded.
 
 ![](images/pathogenic_str_distribution_1kg_eh402_jitter.png)
 
-In total, there are 165 cases that pass pathogenic thresholds. And most of them are from TCF4, NIPA1, and ATXN8OS.
+In total, there are 184 cases that pass pathogenic thresholds. And most of them are from TCF4, NIPA1, and ATXN8OS.
 
 ![](images/pathogenic_str_expansion_1kg_eh402.png)
 
-We manually examined those cases and verified calls as listed below. Specifically, we generated plots to visualize alignments for each case using [REViewer](https://github.com/Illumina/REViewer) to verify the call. 
+We manually examined those cases and verified calls as listed below. Specifically, we generated plots to visualize alignments for each case using [REViewer](https://github.com/Illumina/REViewer) to verify the call.
 
 ### AR
 CAG repeat in AR gene has been associated with Spinobulbar muscular atrophy (SBMA). We observed one individual with 39 copies. While repeat size >38 has been considered full penetrance alleles by previous literatures ([La Spada et al., 1991](https://pubmed.ncbi.nlm.nih.gov/2062380/), [Atsuta et al., 2006](https://pubmed.ncbi.nlm.nih.gov/16621916/), [Fratta et al., 2014](https://pubmed.ncbi.nlm.nih.gov/24814851/)), patients reported all have at least 40 copies. Therefore, expansions with 39 copies are likely not pathogenic.
@@ -34,6 +34,7 @@ CAG repeat in ATXN1 gene has been associated with Spinocerebellar ataxia type 1 
 |----------|---------|----------|--------------------------------|
 | ATXN1    | HG00122 | 30/39    | [Visualization](pileups/HG00122_ATXN1.alignment.pdf)    |
 | ATXN1    | HG03871 | 29/39    | [Visualization](pileups/HG03871_ATXN1.alignment.pdf)    |
+| ATXN1    | HG03615 | 28/39    | [Visualization](pileups/HG03615_ATXN1.alignment.pdf)    |
 
 ### ATXN8OS
 CTG repeat in ATXN8/ATXN8OS gene has been associated with Spinocerebellar ataxia type 8 (SCA8). Current reference ranges are based on total number of (CTA)n(CTG)n. Repeat sizes most associated with ataxia range from 80 to 250. However, repeat sizes from 70 up to 1300 repeats have been observed in individuals without ataxia ([GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1268)). Therefore, whether expansions below are pathogenic or false positives remain unclear.
@@ -54,6 +55,15 @@ CTG repeat in ATXN8/ATXN8OS gene has been associated with Spinocerebellar ataxia
 | ATXN8OS  | NA19679 | 9/91     | [Visualization](pileups/NA19679_ATXN8OS.alignment.pdf)  |
 | ATXN8OS  | NA20541 | 19/85    | [Visualization](pileups/NA20541_ATXN8OS.alignment.pdf)  |
 | ATXN8OS  | NA20798 | 16/93    | [Visualization](pileups/NA20798_ATXN8OS.alignment.pdf)  |
+| ATXN8OS  | HG02054 | 14/118   | [Visualization](pileups/HG02054_ATXN8OS.alignment.pdf)  |
+
+### C9ORF72
+GGGGCC repeat in C9orf72 gene has been associated with Amyotrophic Lateral Sclerosis (ALS) and frontotemporal dementia (FTD). Here we considered repeat size larger than 30 copies to be likely pathogenic, though there are evidence >23 may be deemed sufficient in recent analysis. ([GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1450/)). The expansions listed below may be pathogenic or incorrect call.
+
+| Locus    | Sample | Genotype | Visualization                  |
+|----------|---------|----------|--------------------------------|
+| C9ORF72    | HG00275 | 8/31    | [Visualization](pileups/HG00275_C9ORF72.alignment.pdf)    |
+| C9ORF72    | HG00358 | 5/35    | [Visualization](pileups/HG00358_C9ORF72.alignment.pdf)    |
 
 ### DMPK
 CTG repeat in DMPK gene has been associated with Myotonic dystrophy type 1 (DM1). Expansions >50 CTG repeats are considered as full penetrance alleles and are associated with disease manifestations ([International Myotonic Dystrophy Consortium 2000](https://www.ncbi.nlm.nih.gov/pubmed/10746587)). The expansions listed below may be pathogenic or incorrect call.
@@ -76,9 +86,10 @@ GAA repeat in FXN gene has been associated with Friedreich's ataxia (FRDA). We i
 | FXN      | NA20766 | 9/82     | [Visualization](pileups/NA20766_FXN.alignment.pdf)     |
 | FXN      | NA20771 | 19/140   | [Visualization](pileups/NA20771_FXN.alignment.pdf)     |
 | FXN      | NA21119 | 8/100    | [Visualization](pileups/NA21119_FXN.alignment.pdf)     |
+| FXN      | HG02651 | 9/85    | [Visualization](pileups/HG02651_FXN.alignment.pdf)    |
 
 ### HTT
-CAG repeat has been associated with Huntington’s disease (HD). Alleles of 40 or more repeats are considered full penetrance alleles and are associated with development of HD with great certainty ([GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1305)). The three expansions listed below may be incorrect calls. 
+CAG repeat has been associated with Huntington’s disease (HD). Alleles of 40 or more repeats are considered full penetrance alleles and are associated with development of HD with great certainty ([GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1305)). The three expansions listed below may be incorrect calls.
 
 | Locus    | Sample | Genotype | Visualization                  |
 |----------|---------|----------|--------------------------------|
@@ -139,13 +150,11 @@ GCG repeat has been associated with Amyotrophic Lateral Sclerosis (ALS). Carrier
 | NIPA1    | NA20862 | 8/10     | [Visualization](pileups/NA20862_NIPA1.alignment.pdf)   |
 | NIPA1    | NA20877 | 8/10     | [Visualization](pileups/NA20877_NIPA1.alignment.pdf)   |
 | NIPA1    | NA21107 | 8/10     | [Visualization](pileups/NA21107_NIPA1.alignment.pdf)   |
-
-### NOTCH2NL
-We only found one individual with NOTCH2NL expansion and it has been marked as Low Depth and failed the filter.
-
-| Locus    | Sample  | Genotype | Visualization                  |
-|----------|---------|----------|--------------------------------|
-| NOTCH2NL | HG00580 | 9/90     | [Visualization](pileups/HG00580_NOTCH2NL.alignment.pdf)|
+| NIPA1    | HG04003 | 8/10    | [Visualization](pileups/HG04003_NIPA1.alignment.pdf)    |
+| NIPA1    | HG04198 | 8/10    | [Visualization](pileups/HG04198_NIPA1.alignment.pdf)    |
+| NIPA1    | NA12814 | 8/10    | [Visualization](pileups/NA12814_NIPA1.alignment.pdf)    |
+| NIPA1    | NA19395 | 8/10    | [Visualization](pileups/NA19395_NIPA1.alignment.pdf)    |
+| NIPA1    | NA21118 | 8/10    | [Visualization](pileups/NA21118_NIPA1.alignment.pdf)    |
 
 ### TBP
 CAG or CAA repeat in TBP gene has been associated with Spinocerebellar ataxia type 17 (SCA17). 49 or greater CAG/CAA repeats are considered as full penetrance alleles ([GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1438)). We are unsure about interruptions due to lack of full spanning reads for allele with 50 repeats.
@@ -244,6 +253,16 @@ CTG repeat in TCF4 has been associated with Fuchs endothelial corneal dystrophy 
 | TCF4     | NA20856 | 19/79    | [Visualization](pileups/NA20856_TCF4.alignment.pdf)    |
 | TCF4     | NA20885 | 16/88    | [Visualization](pileups/NA20885_TCF4.alignment.pdf)    |
 | TCF4     | NA21128 | 22/61    | [Visualization](pileups/NA21128_TCF4.alignment.pdf)    |
+| TCF4    | HG00154 | 15/55    | [Visualization](pileups/HG00154_TCF4.alignment.pdf)    |
+| TCF4    | HG01357 | 15/62    | [Visualization](pileups/HG01357_TCF4.alignment.pdf)    |
+| TCF4    | HG01495 | 17/72    | [Visualization](pileups/HG01495_TCF4.alignment.pdf)    |
+| TCF4    | HG01761 | 11/67    | [Visualization](pileups/HG01761_TCF4.alignment.pdf)    |
+| TCF4    | HG03019 | 17/97    | [Visualization](pileups/HG03019_TCF4.alignment.pdf)    |
+| TCF4    | NA11933 | 14/70    | [Visualization](pileups/NA11933_TCF4.alignment.pdf)    |
+| TCF4    | NA12003 | 81/81    | [Visualization](pileups/NA12003_TCF4.alignment.pdf)    |
+| TCF4    | NA12058 | 14/105    | [Visualization](pileups/NA12058_TCF4.alignment.pdf)    |
+| TCF4    | NA20582 | 29/112    | [Visualization](pileups/NA20582_TCF4.alignment.pdf)    |
+| TCF4    | NA20786 | 73/73    | [Visualization](pileups/NA20786_TCF4.alignment.pdf)    |
 
 ## Summary of polymorphism stratified by populations
 We further examined polymorphism of pathogenic STRs. As expected, we observed that AFR population has the highest polymorphism compared to other populations.

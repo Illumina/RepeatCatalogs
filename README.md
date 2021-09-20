@@ -1,29 +1,35 @@
 # STR Catalogs
 
-Short tandem repeats (STRs) are genomic sequences comprised of repetitions of a short motif (typically 2-6bp). Many STRs are implicated in a variety of genetic disorders, such as Huntington's disease, amyotrophic lateral sclerosis (ALS), and fragile X syndrome. Thanks to recent improvements in Next-Generation Sequencing (NGS) technologies and computational methods (e.g., ExpansionHunter), it is now possible to identify large expansions of STRs using Whole Genome Sequencing (WGS).
+Short tandem repeats (STRs) are genomic sequences comprised of repetitions of a short motif (typically 2-6bp). Many STRs are implicated in a variety of genetic disorders, such as Huntington's disease, amyotrophic lateral sclerosis (ALS), and fragile X syndrome. Thanks to recent improvements in Next-Generation Sequencing (NGS) technologies and computational methods (e.g., Expansion Hunter), it is now possible to identify large expansions of STRs using Whole Genome Sequencing (WGS).
 
-Accurate repeat genotyping requires a high-quality STR catalog that specifies reference coordinates and structure of each locus. Here, we generated multiple STR catalogs that can facilitate analysis of STRs. 
+Accurate repeat genotyping requires a high-quality STR catalog that specifies reference coordinates and structure of each locus. Here, we generated well-curated  STR catalog that can facilitate analysis of STRs genome-wide. 
 
 ## Documentation
 
-### Analyze STRs using ExpansionHunter
+### Analyze STRs using Expansion Hunter
 
-The way to use the catalog is to genotype STRs in the catalog in WGS data using [ExpansionHunter](https://github.com/Illumina/ExpansionHunter). We provided a quick [introduction](docs/usage.md) to do that.
+The way to use the catalog is to genotype STRs in the catalog in WGS data using [Expansion Hunter](https://github.com/Illumina/ExpansionHunter). We provided a quick [introduction](docs/usage.md) to do that.
 
 ### Catalogs
 
-We generated multiple STR catalogs that contain mutually exclusive set of STRs using difference approaches to serve different purposes. 
+The contains genome-wide STRs that are polymorphic across populations and 30+ known pathogenic STRs.
 
-* [pathogenic STR](pathogenic_STR/) contains 40+ known pathogenic STRs. 
-* [polymorphic STR](polymorphic_STR/) contains genome-wide STRs that are polymorphic across populations. 
+#### Overview
 
-### Truthset
+The genome-wide polymorphic STR catalog is a comprehensive STR catalog focused on functional STRs generated using population sequencing data. It is the catalog to use if you would like to analyze STRs genome wide. For more details about how genome-wide polymorphic STR catalog differ from other catalogs and how it was generated. You can find more details [here](docs/str_generation.md).
 
-We generated truthsets of STR catalogs in NA12878 using PacBio CCS reads. Details of the method can be found [here](docs/truthset.md).
+#### Population distribution
 
-## Folder structure and file format
+To facilitate the use of the catalog, we genotyped STRs across different samples in 1000 Genomes Project using Expansion Hunter 5.0.0. The histograms of genotypes are [here](hg38/genotype/1000genomes). We also summarized polymorphism by population in [documentation](docs/str_diversity_1kg.md).
 
-Each catalog has its own folder and there are multiple folders within it. Details can be found [here](docs/files.md). 
+#### Folder structure and file format
+
+* `hg38/` catalog in json format in hg38
+* `hg19/` catalog in json format in hg19
+
+#### File format
+
+* Catalogs are stored in json format as specified in [Expansion Hunter](https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md).
 
 ## Contributors
 

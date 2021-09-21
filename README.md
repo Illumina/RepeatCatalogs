@@ -1,18 +1,18 @@
 # STR Catalogs
 
-Short tandem repeats (STRs) are genomic sequences comprised of repetitions of a short motif (typically 2-6bp). Many STRs are implicated in a variety of genetic disorders, such as Huntington's disease, amyotrophic lateral sclerosis (ALS), and fragile X syndrome. Thanks to recent improvements in Next-Generation Sequencing (NGS) technologies and computational methods (e.g., Expansion Hunter), it is now possible to identify large expansions of STRs using Whole Genome Sequencing (WGS).
+Short tandem repeats (STRs) are genomic sequences comprised of repetitions of a short motif (typically 2-6bp). Many STRs are implicated in a variety of genetic disorders, such as Huntington's disease, amyotrophic lateral sclerosis (ALS), and fragile X syndrome. Thanks to recent improvements in Next-Generation Sequencing (NGS) technologies and computational methods (e.g., ExpansionHunter), it is now possible to identify large expansions of STRs using Whole Genome Sequencing (WGS).
 
 Accurate repeat genotyping requires a high-quality STR catalog that specifies reference coordinates and structure of each locus. Here, we generated well-curated  STR catalog that can facilitate analysis of STRs genome-wide. 
 
 ## Documentation
 
-### Analyze STRs using Expansion Hunter
+### Analyze STRs using ExpansionHunter
 
-The way to use the catalog is to genotype STRs in the catalog in WGS data using [Expansion Hunter](https://github.com/Illumina/ExpansionHunter). We provided a quick [introduction](docs/usage.md) to do that.
+The way to use the catalog is to genotype STRs in the catalog in WGS data using [ExpansionHunter](https://github.com/Illumina/ExpansionHunter). We provided a quick [introduction](docs/usage.md) to do that.
 
 ### Catalogs
 
-The contains genome-wide STRs that are polymorphic across populations and 30+ known pathogenic STRs.
+The contains 174,293 STRs that are polymorphic across populations and 30+ known pathogenic STRs.
 
 #### Overview
 
@@ -20,7 +20,7 @@ The genome-wide polymorphic STR catalog is a comprehensive STR catalog focused o
 
 #### Population distribution
 
-To facilitate the use of the catalog, we genotyped STRs across different samples in 1000 Genomes Project using Expansion Hunter 5.0.0. The histograms of genotypes are [here](hg38/genotype/1000genomes). We also summarized polymorphism by population in [documentation](docs/str_diversity_1kg.md).
+To facilitate the use of the catalog, we genotyped STRs across different samples in 1000 Genomes Project using [ExpansionHunter 5.0.0](https://github.com/Illumina/ExpansionHunter/releases/tag/v5.0.0). The histograms of genotypes are [here](hg38/genotype/1000genomes). We also summarized polymorphism by population in [documentation](docs/str_diversity_1kg.md).
 
 #### Folder structure and file format
 
@@ -29,7 +29,7 @@ To facilitate the use of the catalog, we genotyped STRs across different samples
 
 #### File format
 
-* Catalogs are stored in json format as specified in [Expansion Hunter](https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md).
+* Catalogs are stored in json format as specified in [ExpansionHunter](https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md).
 
 ## Contributors
 

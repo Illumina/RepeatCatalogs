@@ -30,6 +30,7 @@ To facilitate the use of the catalog, we genotyped STRs across different samples
 #### File format
 
 * Catalogs are stored in json format as specified in [ExpansionHunter](https://github.com/Illumina/ExpansionHunter/blob/master/docs/04_VariantCatalogFiles.md).
+* Genotypes are summarized as histograms of size distribution where repeat numbers and corresponding allele counts are provided for each STR.
 
 ## Contributors
 
